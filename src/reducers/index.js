@@ -1,7 +1,7 @@
-import {combineReducers} from 'redux'
-
+// import {combineReducers} from 'redux'
+//
 // import reducers
-
-export default combineReducers({
-  // reducer name
-})
+//
+// export default combineReducers({
+//   // reducer name
+// })
