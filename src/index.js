@@ -6,13 +6,11 @@ import {createStore} from 'redux'
 import reducers from './reducers'
 import App from './components/App'
 
-let store = createStore(reducers)
+// let store = createStore(reducers)
 
 document.addEventListener('DOMContentLoaded', () => {
   render(
-    <Provider store={store}>
-      <App />
-    </Provider>,
+      <App />,
     document.getElementById('app')
   )
 })
