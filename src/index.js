@@ -1,16 +1,14 @@
 import React from 'react'
 import {render} from 'react-dom'
-import {Provider} from 'react-redux'
-import {createStore} from 'redux'
+import {Router, Route, hashHistory} from 'react-router'
 
-import reducers from './reducers'
 import App from './components/App'
-
-// let store = createStore(reducers)
 
 document.addEventListener('DOMContentLoaded', () => {
   render(
-      <App />,
+    <Router history={hashHistory}>
+      <Route path="/" component={App} />
+    </Router>,
     document.getElementById('app')
   )
 })
