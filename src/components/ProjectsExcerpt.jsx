@@ -5,8 +5,8 @@ export default React.createClass ({
     return (
       <section>
         <img src="" alt="" />
-        <a href="#AboutPageLink">About</a>
-        <p>This is some info about me!</p>
+        <a href="#ProjectsPageLink">Projects</a>
+        <p>Check out my projects I've contributed to!</p>
       </section>
     )
   }
