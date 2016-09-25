@@ -12,6 +12,7 @@ export default React.createClass ({
         <SiteSearch />
         <DropDownNav />
         <WelcomeMessage />
+        <hr />
       </header>
     )
   }
