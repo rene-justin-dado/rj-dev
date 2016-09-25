@@ -6,7 +6,7 @@ export default React.createClass ({
       <section>
         <img src="" alt="" />
         <a href="#ProjectsPageLink">Projects</a>
-        <p>Check out my projects I've contributed to!</p>
+        <p>Check out some projects I've contributed to!</p>
       </section>
     )
   }
