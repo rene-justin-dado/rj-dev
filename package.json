@@ -42,5 +42,8 @@
   "bugs": {
     "url": "https://github.com/rene-justin-dado/personal-blog/issues"
   },
-  "homepage": "https://github.com/rene-justin-dado/personal-blog#readme"
+  "homepage": "https://github.com/rene-justin-dado/personal-blog#readme",
+  "dependencies": {
+    "react-router": "^2.8.1"
+  }
 }
