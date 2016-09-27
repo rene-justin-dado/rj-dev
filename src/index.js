@@ -3,7 +3,7 @@ import {render} from 'react-dom'
 import {Router, Route, hashHistory} from 'react-router'
 
 import App from './components/App'
-import AboutPage from './components/AboutPage'
+import AboutPage from './containers/AboutPage'
 
 document.addEventListener('DOMContentLoaded', () => {
   render(

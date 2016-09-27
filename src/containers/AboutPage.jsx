@@ -4,7 +4,7 @@ export default React.createClass ({
   render () {
     return (
       <div className="about-page">
-        <h3>I love <3</h3>
+        <h3>I love:</h3>
         <ul>
           <li>Tech and...</li>
           <li>Good Stories and...</li>
