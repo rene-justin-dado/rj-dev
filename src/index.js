@@ -3,8 +3,9 @@ import {render} from 'react-dom'
 import {Router, Route, hashHistory} from 'react-router'
 
 import App from './components/App'
-import AboutPage from './containers/AboutPage'
-import BlogsLandingPage from './containers/BlogsLandingPage'
+import AboutPage from './components/AboutPage'
+import BlogsLandingPage from './components/BlogsLandingPage'
+import CulturalBlogs from './components/CulturalBlogs'
 
 document.addEventListener('DOMContentLoaded', () => {
   render(
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <Route path="/" component={App} />
       <Route path="/about" component={AboutPage} />
       <Route path="/blogs" component={BlogsLandingPage} />
+      <Route path="/blogs/cultural" component={CulturalBlogs} />
     </Router>,
     document.getElementById('app')
   )
