@@ -4,16 +4,19 @@
   align-items: center;
 }
 .welcome-message, .welcome-message * {
-  border: 1px solid red;
+  background-color: silver;
 }
 .welcome-message {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  padding: 1rem;
+  color: black;
   background: url(http://technogadzet.pl/wp-content/uploads/2013/04/i-limb-ultra-revolution-7.jpg) left no-repeat, url(http://images.dailytech.com/nimage/Bionic_Leg_RIC_2_Wide.jpg);
 }
 
 .welcome-message h1 {
   width: 100%;
+  margin-bottom: 1rem;
 }
