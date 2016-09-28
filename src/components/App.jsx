@@ -1,6 +1,6 @@
 import React from 'react'
-import WelcomeHeader from '../containers/WelcomeHeader'
-import Excerpts from '../containers/Excerpts'
+import WelcomeHeader from './WelcomeHeader'
+import Excerpts from './Excerpts'
 
 export default React.createClass({
   render () {
