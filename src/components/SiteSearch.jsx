@@ -8,17 +8,12 @@ export default React.createClass({
   render () {
     return (
       <input
+        name="site-search"
         type="text"
-        placeholder="Search the Site"
-        onClick={
-          (evt) => {
-            if (evt.target.getAttribute("placeholder") === "Search the Site") {
-              evt.target.setAttribute("placeholder", "clicked")
-            } else {
-              evt.target.setAttribute("placeholder", "Search the Site")
-            }
-          }
-        }/>
+        placeholder="Search is not yet available"
+        size="30"
+        onClick={(evt) => console.log(evt.target)}
+        />
     )
   }
 })
