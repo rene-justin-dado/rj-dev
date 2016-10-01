@@ -27,3 +27,20 @@ hr {
   background: rgba(55, 56, 86, 0.64);
   border: 1px solid red;
 }
+
+.excerpts-container {
+  display: flex;
+  justify-content: space-between;
+}
+.excerpts-container img {
+  width: 20rem;
+  height: 15rem;
+}
+.excerpt-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.excerpt-section h2 {
+  margin: 0;
+}
