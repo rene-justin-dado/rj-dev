@@ -51,7 +51,31 @@ hr {
   color: #4c959a;
 }
 
+
+.about-page {
+  margin: 2rem;
+}
+
+.personal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal-lists {
+  width: 48%;
+}
+
 .skills-icons {
   width: 20rem;
   height: 15rem;
+  margin-bottom: 1rem;
+}
+
+.technical-skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#full-stack-javascript-icon {
+  width: 80%;
 }
