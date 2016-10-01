@@ -10,7 +10,8 @@ module.exports = {
     loaders: [
       {
         loader: 'babel-loader?cacheDirectory',
-        test: /\.jsx?$/, exclude: 'node_modules'
+        test: /\.jsx?$/,
+        exclude: 'node_modules'
       }
     ]
   },
