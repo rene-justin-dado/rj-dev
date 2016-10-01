@@ -13,7 +13,9 @@
   align-items: center;
   padding: 1rem;
   color: black;
-  background: url(http://technogadzet.pl/wp-content/uploads/2013/04/i-limb-ultra-revolution-7.jpg) left no-repeat, url(http://images.dailytech.com/nimage/Bionic_Leg_RIC_2_Wide.jpg);
+  background: url(../images/bionic-hand.jpg) no-repeat,
+  url(../images/bionic-leg.jpg) right no-repeat;
+  background-size: contain;
 }
 
 .welcome-message h1 {
