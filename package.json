@@ -39,12 +39,12 @@
   "main": "webpack.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rene-justin-dado/personal-blog.git"
+    "url": "git+https://github.com/rene-justin-dado/rj-dev.git"
   },
   "bugs": {
-    "url": "https://github.com/rene-justin-dado/personal-blog/issues"
+    "url": "https://github.com/rene-justin-dado/rj-dev/issues"
   },
-  "homepage": "https://github.com/rene-justin-dado/personal-blog#readme",
+  "homepage": "https://github.com/rene-justin-dado/rj-dev#readme",
   "dependencies": {
     "react-router": "^2.8.1"
   }
