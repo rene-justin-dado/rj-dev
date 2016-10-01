@@ -50,3 +50,8 @@ hr {
 .nav-link {
   color: #4c959a;
 }
+
+.skills-icons {
+  width: 20rem;
+  height: 15rem;
+}

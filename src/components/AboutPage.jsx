@@ -4,7 +4,18 @@ export default React.createClass ({
   render () {
     return (
       <div className="about-page">
-        <h1>So, here's a few things about me.</h1>
+        <h1>Here's some technologies I have experience with.</h1>
+
+        <img className="skills-icons" src="/images/express.png" alt="express-icon"/>
+        <img className="skills-icons" src="/images/postgres.png" alt="postgres-icon"/>
+        <img className="skills-icons" src="/images/react-redux.png" alt="react-redux-icon"/>
+        <img className="skills-icons" src="/images/react-router.png" alt="react-router-icon"/>
+        <img className="skills-icons" src="/images/react.png" alt="react-icon"/>
+        <img className="skills-icons" src="/images/redux.png" alt="redux-icon"/>
+        <img className="skills-icons" src="/images/webpack.png" alt="webpack-icon"/>
+        <img className="skills-icons" src="/images/full-stack-javascript.png" alt="full-stack-javascript-icon"/>
+
+        <h1>And, here's a few things about me.</h1>
         <div className="likes">
           <h3>I love:</h3>
           <ul>
@@ -25,14 +36,6 @@ export default React.createClass ({
             <li>People exercising their existing power to empower themselves as they disempower others.</li>
           </ul>
         </div>
-        <img className="skills-icons" src="/images/express.png" alt="express-icon"/>
-        <img className="skills-icons" src="/images/postgres.png" alt="postgres-icon"/>
-        <img className="skills-icons" src="/images/react-redux.png" alt="react-redux-icon"/>
-        <img className="skills-icons" src="/images/react-router.png" alt="react-router-icon"/>
-        <img className="skills-icons" src="/images/react.png" alt="react-icon"/>
-        <img className="skills-icons" src="/images/redux.png" alt="redux-icon"/>
-        <img className="skills-icons" src="/images/webpack.png" alt="webpack-icon"/>
-        <img className="skills-icons" src="/images/full-stack-javascript.png" alt="full-stack-javascript-icon"/>
       </div>
     )
   }
