@@ -7,7 +7,7 @@ export default React.createClass ({
   render () {
     return (
       <header className="welcome-header">
-        <h1>Hello</h1>
+        <h1>RJDev</h1>
         <SiteSearch />
         <DropDownNav />
       </header>

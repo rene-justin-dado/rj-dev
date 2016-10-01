@@ -7,7 +7,7 @@ import ProjectsExcerpt from '../components/ProjectsExcerpt'
 export default React.createClass ({
   render () {
     return (
-      <section>
+      <section className="excerpts-container">
         <AboutExcerpt />
         <BlogsExcerpt />
         <ProjectsExcerpt />

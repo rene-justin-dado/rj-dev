@@ -5,11 +5,10 @@ export default React.createClass ({
     return (
       <div className="welcome-message">
         <h1>Welcome to my site!</h1>
-        <div className="poem">
-          <p>Roses are red,</p>
-          <p>Violets are blue,</p>
-          <p>Sugar is sweet,</p>
-          <p>But not as sweet as you! :D</p>
+        <div className="welcome-content">
+          <p>Hi! I'm Justin and you've made it to my site.<br/>
+          Who am I, you ask? Take a look around,<br/>
+          Explore a bit and you'll find out a bit about me. ;)</p>
         </div>
       </div>
     )
