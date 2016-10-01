@@ -6,9 +6,9 @@ export default React.createClass ({
     return (
       <section className="excerpt-section">
         <Link to="/blogs">
-          <img src="http://67.media.tumblr.com/2cc87f59e7ef460934cfd106a07db703/tumblr_msyezrMu2J1s1pua7o1_1280.png" alt="placeholder hy" />
+          <img src="/images/blogs-image.png" alt="blogs-image" />
         </Link>
-        <Link className="blogs-landing-page-link" to={'/blogs'}><h2>Blogs</h2></Link>
+        <Link className="nav-link" to={'/blogs'}><h2>Blogs</h2></Link>
         <p>Check out my blogs, where I talk about..... stuff!</p>
       </section>
     )
