@@ -1,9 +1,11 @@
 {
   "name": "personal-blog",
   "version": "0.1.0",
-  "description": "React Redux client side only",
+  "description": "Justin's Personal Blog",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline"
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack --watch",
+    "server": "nodemon ./src/server/index.js"
   },
   "keywords": [
     "react",
