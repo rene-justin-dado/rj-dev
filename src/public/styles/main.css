@@ -70,16 +70,19 @@ hr {
 }
 
 .skills-icons {
-  width: 20rem;
-  height: 15rem;
+  width: 10rem;
+  height: 5rem;
   margin-bottom: 1rem;
 }
 
 .technical-skills {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 #full-stack-javascript-icon {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }

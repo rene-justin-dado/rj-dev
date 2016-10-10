@@ -8,9 +8,9 @@ export default React.createClass ({
   render () {
     return (
       <section className="excerpts-container">
-        <AboutExcerpt />
-        <BlogsExcerpt />
         <ProjectsExcerpt />
+        <BlogsExcerpt />
+        <AboutExcerpt />
       </section>
     )
   }
