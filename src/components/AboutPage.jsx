@@ -9,30 +9,36 @@ export default React.createClass ({
         <div className="technical-skills">
           <div id="full-stack-javascript-icon">
             <img className="skills-icons" src="/images/full-stack-javascript.png" alt="full-stack-javascript-icon"/>
-            <h3>full stack javascript</h3>
+            <h4>full stack javascript</h4>
           </div>
-          <img className="skills-icons" src="/images/express.png" alt="express-icon"/>
+          <div>
+            <img className="skills-icons" src="/images/express.png" alt="express-icon"/>
+            <h4>express</h4>
+          </div>
           <div>
             <img className="skills-icons" src="/images/postgres.png" alt="postgres-icon"/>
-            <h3>postgres</h3>
+            <h4>postgres</h4>
           </div>
           <div>
             <img className="skills-icons" src="/images/react-redux.png" alt="react-redux-icon"/>
-            <h3>react-redux</h3>
+            <h4>react-redux</h4>
           </div>
           <div>
             <img className="skills-icons" src="/images/react-router.png" alt="react-router-icon"/>
-            <h3>react-router</h3>
+            <h4>react-router</h4>
           </div>
           <div>
             <img className="skills-icons" src="/images/react.png" alt="react-icon"/>
-            <h3>react</h3>
+            <h4>react</h4>
           </div>
           <div>
             <img className="skills-icons" src="/images/redux.png" alt="redux-icon"/>
-            <h3>redux</h3>
+            <h4>redux</h4>
           </div>
-          <img className="skills-icons" src="/images/webpack.png" alt="webpack-icon"/>
+          <div>
+            <img className="skills-icons" src="/images/webpack.png" alt="webpack-icon"/>
+            <h4>webpack</h4>
+          </div>
         </div>
       <hr/>
         <h1>And, here's a few things about me.</h1>

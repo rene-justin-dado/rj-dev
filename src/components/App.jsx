@@ -10,7 +10,6 @@ export default React.createClass({
         <WelcomeHeader />
         <hr/>
         <WelcomeMessage />
-        <hr/>
         <Excerpts />
       </div>
     )
