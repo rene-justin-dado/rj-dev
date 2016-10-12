@@ -17,19 +17,9 @@ hr {
   align-items: center;
   padding: 1rem;
   color: #122486;
-}
-.welcome-message:after {
-  content: "";
   background: url(../images/bionic-hand.jpg) left no-repeat,
-  url(../images/bionic-leg.jpg) right no-repeat;
-  background-size: 50% 50%;
-  opacity: 0.5;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
+    url(../images/bionic-leg.jpg) right no-repeat;
+  background-size: 33% 100%;
 }
 
 .excerpts-container {
@@ -37,6 +27,7 @@ hr {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1rem;
+  margin-top: 3rem;
 }
 .excerpts-container img {
   width: 18rem;
