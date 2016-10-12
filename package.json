@@ -15,7 +15,7 @@
     "redux"
   ],
   "author": "EDA",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "devDependencies": {
     "babel-core": "^6.13.2",
     "babel-loader": "^6.2.4",
