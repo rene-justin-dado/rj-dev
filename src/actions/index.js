@@ -1,6 +1,7 @@
 import request from 'superagent'
 
 const url = 'http://localhost:3000'
+const proj1 = '/v1/projects'
 
 export const receiveProjects = (projects) => {
   return {
@@ -9,15 +10,15 @@ export const receiveProjects = (projects) => {
   }
 }
 
-export function getAllProjects () {
-  return () => {
+export function getAllProjects (projects) {
+  return (dispatch) => {
     return request
-      .get(`https://crossorigin.me/${url}/v1/projects`)
+      .get(`https://crossorigin.me/${url}${proj1}`)
       .end((err, res) => {
         if (err) {
           res.send('Whoops! There was a problem!')
         }
-        dispatch(receiveProjects())
+        dispatch(receiveProjects(projects))
       })
   }
 }
