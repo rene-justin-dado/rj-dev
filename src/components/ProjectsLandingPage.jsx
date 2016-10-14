@@ -4,7 +4,7 @@ import request from 'superagent'
 const url = 'http://localhost:3000'
 
 export default React.createClass({
-  setInitialState () {
+  getInitialState () {
     return {
       projects: []
     }
@@ -25,10 +25,11 @@ export default React.createClass({
   render () {
     const projects = this.state.projects.map((elem, i) => {
       return (
-        <div key={i}>
-          <p>{elem.projects.name}</p>
-          <a href={elem.projects.github_link}>Github Code</a>
-          <a href={elem.projects.deployment_link}>Deployed Site</a>
+        <div key={i} className="project-info">
+          <p>{elem.name}</p>
+          <a href={elem.github_link}>Github Code</a>
+          <br/>
+          <a href={elem.deployment_link}>Deployed Site</a>
         </div>
       )
     })
