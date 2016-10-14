@@ -1,5 +1,6 @@
 import React from 'react'
 import request from 'superagent'
+import {Link} from 'react-router'
 
 const url = 'http://localhost:3000'
 
@@ -41,7 +42,10 @@ export default React.createClass({
     })
     return (
       <div className='projects-landing-page'>
-        <h1>Here's some projects I've contributed to.</h1>
+        <header>
+          <Link to="/"><h5>Home</h5></Link>
+          <h1>Here's some projects I've contributed to.</h1>
+        </header>
         {projects}
       </div>
     )
