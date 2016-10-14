@@ -1,11 +1,14 @@
 import React from 'react'
+import {Link} from 'react-router'
 
 export default React.createClass({
   render () {
     return (
       <div className="about-page">
-
-        <h1>Here's some technologies I have experience with.</h1>
+        <header>
+          <Link to="/"><h5>Home</h5></Link>
+          <h1>Here's some technologies I have experience with.</h1>
+        </header>
         <div className="technical-skills">
           <div id="full-stack-javascript-icon">
             <img className="skills-icons" src="/images/full-stack-javascript.png" alt="full-stack-javascript-icon"/>
