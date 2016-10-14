@@ -26,15 +26,23 @@ export default React.createClass({
     const projects = this.state.projects.map((elem, i) => {
       return (
         <div key={i} className="project-info">
-          <p>{elem.name}</p>
-          <a href={elem.github_link}>Github Code</a>
+          <em><strong><h4>{elem.name}</h4></strong></em>
+          <a href={elem.github_link}>
+            <img id="octocat-icon"
+                 src="images/octocats/classic-octocat.png"
+                 alt="octocat"
+                 height="100px"
+                 width="100px"/>
+          </a>
           <br/>
-          <a href={elem.deployment_link}>Deployed Site</a>
+          <h4><a href={elem.deployment_link}>Deployed Site</a></h4>
+          <hr/>
         </div>
       )
     })
     return (
       <div className='projects-landing-page'>
+        <h1>Here's some projects I've contributed to.</h1>
         {projects}
       </div>
     )

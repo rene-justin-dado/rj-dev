@@ -77,3 +77,20 @@ hr {
   align-items: center;
   width: 100%;
 }
+
+.projects-landing-page {
+  display: flex;
+  flex-direction: column;
+}
+.projects-landing-page h1 {  
+  align-self: center;
+}
+.project-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+.project-info * {
+  margin: 0;
+}
