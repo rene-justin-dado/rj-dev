@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux'
 
-import reducer from './reducer'
+import projects from './projects'
 
 export default combineReducers({
-  reducer
+  projects
 })

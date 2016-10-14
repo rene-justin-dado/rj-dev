@@ -1,7 +1,7 @@
 export default (state = {}, action) => {
   switch (action.type) {
-    case "REDUCER":
-      return action.user
+    case 'RECEIVE_PROJECTS':
+      return action.receiveProjects
     default:
       return state
   }
