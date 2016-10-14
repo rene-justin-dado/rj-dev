@@ -27,8 +27,8 @@ export default React.createClass({
       return (
         <div key={i}>
           <p>{elem.projects.name}</p>
-          <a href{elem.projects.github_link}>Github Code</a>
-          <a href{elem.projects.deployment_link}>Deployed Site</a>
+          <a href={elem.projects.github_link}>Github Code</a>
+          <a href={elem.projects.deployment_link}>Deployed Site</a>
         </div>
       )
     })
