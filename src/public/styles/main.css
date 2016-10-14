@@ -82,13 +82,15 @@ hr {
   display: flex;
   flex-direction: column;
 }
-.projects-landing-page h1 {  
+.projects-landing-page h1 {
   align-self: center;
 }
 .project-info {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid teal;
   margin-top: 3rem;
 }
 .project-info * {

@@ -28,15 +28,14 @@ export default React.createClass({
         <div key={i} className="project-info">
           <em><strong><h4>{elem.name}</h4></strong></em>
           <a href={elem.github_link}>
-            <img id="octocat-icon"
-                 src="images/octocats/classic-octocat.png"
+            <img src="images/octocats/classic-octocat.png"
                  alt="octocat"
                  height="100px"
                  width="100px"/>
+             Github Link
           </a>
           <br/>
-          <h4><a href={elem.deployment_link}>Deployed Site</a></h4>
-          <hr/>
+          <h5><a href={elem.deployment_link || elem.github_link}>{elem.deployment_link || "Nothing but Github"}</a></h5>
         </div>
       )
     })
