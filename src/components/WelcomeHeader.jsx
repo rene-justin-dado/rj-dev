@@ -3,7 +3,7 @@ import React from 'react'
 import SiteSearch from '../components/SiteSearch'
 import DropDownNav from '../components/DropDownNav'
 
-export default React.createClass ({
+export default React.createClass({
   render () {
     return (
       <header className="welcome-header">
