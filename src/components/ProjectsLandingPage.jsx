@@ -2,7 +2,7 @@ import React from 'react'
 import request from 'superagent'
 import {Link} from 'react-router'
 
-const url = 'http://localhost:3000' || 'https://rj-dev.herokuapp.com'
+const url = 'http://localhost:3000' || 'http://rj-dev-backend.herokuapp.com/'
 
 export default React.createClass({
   getInitialState () {
