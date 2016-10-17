@@ -2,7 +2,8 @@ import React from 'react'
 import request from 'superagent'
 import {Link} from 'react-router'
 
-const url = 'http://localhost:3000' || 'http://rj-dev-backend.herokuapp.com/'
+const proxy = ' https://crossorigin.me/',
+      url = 'http://localhost:3000' || `${proxy}http://rj-dev-backend.herokuapp.com/`
 
 export default React.createClass({
   getInitialState () {
