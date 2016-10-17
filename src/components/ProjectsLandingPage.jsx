@@ -2,7 +2,7 @@ import React from 'react'
 import request from 'superagent'
 import {Link} from 'react-router'
 
-const proxy = ' https://crossorigin.me/',
+const proxy = 'https://crossorigin.me/',
       url = 'http://localhost:3000' || `${proxy}http://rj-dev-backend.herokuapp.com/`
 
 export default React.createClass({
@@ -16,7 +16,6 @@ export default React.createClass({
       .get(`${url}/v1/projects`)
       .end((err, res) => {
         if (err) {
-          res.send('Whoops! Something went wrong!')
           return
         }
         this.setState({
