@@ -9,7 +9,12 @@ export default React.createClass({
           <p>Hi! I'm Justin and you've made it to my site.<br/>
           Who am I, you ask? Take a look around,<br/>
         Explore a bit and you'll find out a bit about me.<br/>
-      Read a bit about this site <a href="https://github.com/rene-justin-dado/rj-dev/blob/master/README.md">here</a></p>
+          </p>
+          <section className="emphasize">Read a bit about this site
+            <a href="https://github.com/rene-justin-dado/rj-dev/blob/master/README.md">
+              here
+            </a>
+          </section>
         </div>
       </div>
     )
