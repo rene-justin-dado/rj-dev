@@ -96,3 +96,12 @@ hr {
 .project-info * {
   margin: 0;
 }
+
+.emphasize {
+  display: flex;
+  justify-content: center;
+  background-color: #d2c7c7;
+}
+.emphasize a {
+  margin-left: 1rem;
+}
