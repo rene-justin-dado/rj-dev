@@ -20,14 +20,17 @@ hr {
   background: url(../images/bionic-hand.jpg) left no-repeat,
     url(../images/bionic-leg.jpg) right no-repeat;
   background-size: 33% 100%;
+  border: 2px solid teal;
 }
 
 .excerpts-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1rem;
+  padding-right: 8rem;
   margin-top: 3rem;
+  border: 2px solid teal;
 }
 .excerpts-container img {
   width: 18rem;
