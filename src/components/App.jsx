@@ -8,7 +8,6 @@ export default React.createClass({
     return (
       <div className='app-container'>
         <WelcomeHeader />
-        <hr/>
         <WelcomeMessage />
         <Excerpts />
       </div>

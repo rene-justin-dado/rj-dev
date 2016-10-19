@@ -4,7 +4,7 @@ export default React.createClass({
   render () {
     return (
       <div className="welcome-message">
-        <h1>Welcome to my site!</h1>
+        <h2>Welcome to my site!</h2>
         <div className="welcome-content">
           <p>Hi! I'm Justin and you've made it to my site.<br/>
           Who am I, you ask? Take a look around,<br/>

@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-size: 1.3rem;
 }
 
@@ -6,20 +7,25 @@ hr {
   margin-bottom: 1.5rem;
 }
 
-.welcome-header, .projects-landing-page header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 .welcome-message {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  padding-bottom: 2rem;
+  margin-top: 5rem;
   color: #122486;
-  background: url(../images/bionic-hand.jpg) left no-repeat,
-    url(../images/bionic-leg.jpg) right no-repeat;
-  background-size: 33% 100%;
+  border-bottom: solid 2px grey;
+}
+.welcome-header, .projects-landing-page header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  top: 0;
+}
+#site-search {
+  display: none;
 }
 
 .excerpts-container {
@@ -29,7 +35,7 @@ hr {
   padding: 1rem;
   padding-right: 8rem;
   margin-top: 3rem;
-}
+  }
 .excerpts-container img {
   width: 18rem;
   height: 14rem;
@@ -105,4 +111,19 @@ hr {
 }
 .emphasize a {
   margin-left: 1rem;
+}
+
+@media (min-width: 321px) {
+
+  #site-search {
+    display: block;
+  }
+  .welcome-message {
+    padding: 1rem;
+    color: #122486;
+    background: url(../images/bionic-hand.jpg) left no-repeat,
+      url(../images/bionic-leg.jpg) right no-repeat;
+    background-size: 33% 100%;
+    border: 2px solid teal;
+  }
 }

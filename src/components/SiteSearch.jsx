@@ -8,6 +8,7 @@ export default React.createClass({
   render () {
     return (
       <input
+        id="site-search"
         name="site-search"
         type="text"
         placeholder="Search is not yet available"
