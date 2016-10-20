@@ -15,8 +15,11 @@ hr {
   padding-bottom: 2rem;
   margin-top: 5rem;
   color: #122486;
+  background: url(../images/bionic-hand.jpg) left no-repeat;
+  background-size: 34rem;
   border-bottom: solid 2px grey;
 }
+
 .welcome-header, .projects-landing-page header {
   display: flex;
   justify-content: space-around;
@@ -119,11 +122,15 @@ hr {
     display: block;
   }
   .welcome-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 1rem;
     color: #122486;
     background: url(../images/bionic-hand.jpg) left no-repeat,
       url(../images/bionic-leg.jpg) right no-repeat;
-    background-size: 33% 100%;
+    background-size: 40rem 30rem;
     border: 2px solid teal;
   }
 }
