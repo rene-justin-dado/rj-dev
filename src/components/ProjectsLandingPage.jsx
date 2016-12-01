@@ -3,7 +3,7 @@ import request from 'superagent'
 import {Link} from 'react-router'
 
 const proxy = 'https://crossorigin.me/',
-      url = `${proxy}http://rj-dev-backend.herokuapp.com` || 'http://localhost:3000'
+      url = 'http://localhost:3000' || `${proxy}http://rj-dev-backend.herokuapp.com`
 
 export default React.createClass({
   getInitialState () {
@@ -38,7 +38,7 @@ export default React.createClass({
           <br/>
           <h5>
             <a href={elem.deployment_link || elem.github_link}>
-              {elem.deployment_link || "Nothing but Github"}
+              {elem.deployment_link || 'Nothing but Github'}
             </a>
           </h5>
         </div>
