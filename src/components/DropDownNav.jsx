@@ -1,16 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router'
 
 export default React.createClass({
   render () {
     return (
-      <nav className="navbar navbar-default">
+      <nav className="navbar">
         <div className="container-fluid">
           <div className="dropdown">
-            <a className="dropdown-toggle" data-toggle="dropdown">Navigate</a>
+            <a className="dropdown-toggle" data-toggle="dropdown"><h3>The Bifrost</h3></a>
             <ul className="dropdown-menu">
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Link 3</a></li>
+              <li><Link to="/projects">Projects</Link></li>
+              <li><Link to="blogs">Blogs</Link></li>
+              <li><Link to="about">About</Link></li>
             </ul>
           </div>
         </div>
