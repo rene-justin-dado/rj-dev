@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "description": "Justin's Personal Blog",
   "scripts": {
-    "start": "node ./src/server/index.js",
-    "nodemon": "nodemon ./src/server/index.js",
+    "start": "node ./src/server/server.js",
+    "nodemon": "nodemon ./src/server/server.js",
     "build": "webpack --watch",
     "devserver": "webpack-dev-server --hot --inline",
-    "server": "nodemon ./src/server/index.js",
     "postinstall": "webpack"
   },
   "keywords": [
