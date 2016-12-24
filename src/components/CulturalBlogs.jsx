@@ -25,14 +25,13 @@ export default React.createClass({
   },
   render () {
     const blogs = this.state.blogs.map((elem, i) => {
-      let content = JSON.parse(elem.content)
       return (
         <div key={i} className="blog-info">
           <h5>{elem.category}</h5>
           <h4>{elem.title}</h4>
-          <h4>{content.title}</h4>
-          <h5>{content.questions}</h5>
-          <p>{content.answers}</p>
+          <h4>{elem.content.title}</h4>
+          <h5>{elem.content.questions}</h5>
+          <p>{elem.content.answers}</p>
         </div>
       )
     })
