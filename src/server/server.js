@@ -1,6 +1,6 @@
 const express = require('express')
-
-const PORT = process.env.PORT || 5000
+const cfg = require('../config')
+const PORT = cfg.port
 const app = express()
 
 app.use(express.static(__dirname + './../public'))
