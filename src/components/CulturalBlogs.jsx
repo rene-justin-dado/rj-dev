@@ -30,8 +30,8 @@ export default React.createClass({
           <h5>{elem.category}</h5>
           <h4>{elem.title}</h4>
           <h4>{elem.content.title}</h4>
-          <h5>{elem.content.questions}</h5>
-          <p>{elem.content.answers}</p>
+          <h5>{elem.content.questions[i]}</h5>
+          <p>{elem.content.answers[i]}</p>
         </div>
       )
     })
