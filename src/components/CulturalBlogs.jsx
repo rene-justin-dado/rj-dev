@@ -28,9 +28,9 @@ export default React.createClass({
       return (
         <div key={i} className="blog-info">
           <h5>{elem.category}</h5>
-          <h4>{elem.title}</h4>
-          <h4>{elem.content.title}</h4>
-          <h5>{elem.content.questions[i]}</h5>
+          <h4>{elem.title}</h4><br/>
+          <h4>{elem.content.title}</h4><br/>
+          <h5>{elem.content.questions[i]}</h5><br/>
           <p>{elem.content.answers[i]}</p>
         </div>
       )
