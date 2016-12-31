@@ -2,7 +2,9 @@ import React from 'react'
 import {Link} from 'react-router'
 
 export default React.createClass({
-
+  propTypes: {
+    blogs: React.PropTypes.array.isRequired
+  },
   render () {
     return (
       <div className="blogs-landing-page">

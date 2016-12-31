@@ -1,37 +1,41 @@
 import React from 'react'
 import request from 'superagent'
 import {Link} from 'react-router'
+import QnAList from './QnAList'
 
 const proxy = 'https://crossorigin.me/',
       url = `${proxy}http://rj-dev-backend.herokuapp.com` || 'http://localhost:3000'
 
 export default React.createClass({
-  getInitialState () {
-    return {
-      blogs: []
-    }
+  propTypes: {
+    blogs: React.PropTypes.array.isRequired
   },
-  componentWillMount () {
-    request
-      .get(`${url}/v1/blogs`)
-      .end((err, res) => {
-        if (err) {
-          return
-        }
-        this.setState({
-          blogs: res.body.data
-        })
-      })
-  },
+  // getInitialState () {
+  //   return {
+  //     blogs: []
+  //   }
+  // },
+  // componentWillMount () {
+  //   request
+  //     .get(`${url}/v1/blogs`)
+  //     .end((err, res) => {
+  //       if (err) {
+  //         return
+  //       }
+  //       this.setState({
+  //         blogs: res.body.data
+  //       })
+  //     })
+  // },
   render () {
-    const blogs = this.state.blogs.map((elem, i) => {
+    console.log(this.props.blogs)
+    const blogs = this.props.blogs.map((blog, i) => {
       return (
         <div key={i} className="blog-info">
-          <h5>{elem.category}</h5>
-          <h4>{elem.title}</h4><br/>
-          <h4>{elem.content.title}</h4><br/>
-          <h5>{elem.content.questions[i] || null}</h5><br/>
-          <p>{elem.content.answers[i] || null}</p>
+          <h5>{blog.category}</h5>
+          <h4>{blog.title}</h4><br/>
+          <h4>{blog.content.title}</h4><br/>
+          {QnAList}
         </div>
       )
     })
