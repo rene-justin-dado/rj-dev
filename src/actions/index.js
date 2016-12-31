@@ -24,6 +24,13 @@ export function getAllProjects (projects) {
   }
 }
 
+export const receiveBlogs = (blogs) => {
+  return {
+    type: 'RECEIVE_BLOGS',
+    blogs
+  }
+}
+
 export const getAllBlogs = () => {
   return (dispatch) => {
     request
@@ -31,9 +38,8 @@ export const getAllBlogs = () => {
       .end((err, res) => {
         if (err) {
           res.send('Whoops! There was a problem!')
-        } else {
-          return res.body.data
         }
+          dispatch(receiveBlogs(res.body.data))
       })
   }
 }
