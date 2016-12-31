@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import BlogsLandingPage from '../components/BlogsLandingPage'
+import CulturalBlogs from '../components/CulturalBlogs'
 import {getAllBlogs} from '../actions'
 
 const mapStateToProps = (state) => {
@@ -18,4 +18,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(BlogsLandingPage)
+export default connect(mapStateToProps, mapDispatchToProps)(CulturalBlogs)
