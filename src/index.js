@@ -2,16 +2,21 @@ import React from 'react'
 import {render} from 'react-dom'
 import {Router, Route, hashHistory} from 'react-router'
 import {Provider} from 'react-redux'
-import {createStore} from 'redux'
+import {createStore, applyMiddleware} from 'redux'
+import thunk from 'redux-thunk'
 
-import reducers from './reducers'
+import rootReducer from './reducers'
 import App from './components/App'
 import ProjectsLandingPage from './components/ProjectsLandingPage'
 import BlogsLandingPage from './components/BlogsLandingPage'
 import CulturalBlogs from './components/CulturalBlogs'
 import AboutPage from './components/AboutPage'
 
-const store = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+const store = createStore(
+  rootReducer,
+  applyMiddleware(thunk),
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
 
 document.addEventListener('DOMContentLoaded', () => {
   render(
