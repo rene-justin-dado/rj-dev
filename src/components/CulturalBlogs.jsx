@@ -8,28 +8,27 @@ const proxy = 'https://crossorigin.me/',
 
 export default React.createClass({
   propTypes: {
-    blogs: React.PropTypes.array.isRequired
+    blogs: React.PropTypes.array
   },
-  // getInitialState () {
-  //   return {
-  //     blogs: []
-  //   }
-  // },
-  // componentWillMount () {
-  //   request
-  //     .get(`${url}/v1/blogs`)
-  //     .end((err, res) => {
-  //       if (err) {
-  //         return
-  //       }
-  //       this.setState({
-  //         blogs: res.body.data
-  //       })
-  //     })
-  // },
+  getInitialState () {
+    return {
+      blogs: []
+    }
+  },
+  componentWillMount () {
+    request
+      .get(`${url}/v1/blogs`)
+      .end((err, res) => {
+        if (err) {
+          return
+        }
+        this.setState({
+          blogs: res.body.data
+        })
+      })
+  },
   render () {
-    console.log(this.props.blogs)
-    const blogs = this.props.blogs.map((blog, i) => {
+    const blogs = this.state.blogs.map((blog, i) => {
       return (
         <div key={i} className="blog-info">
           <h5>{blog.category}</h5>
