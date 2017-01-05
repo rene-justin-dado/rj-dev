@@ -1,20 +1,25 @@
 import React from 'react'
 
 export default React.createClass({
-  // props: {
-  //   getBlogs: React.PropTypes.Object.isRequired
-  // },
+  propTypes: {
+    blogs: React.PropTypes.array.isRequired
+  },
   render () {
-    const qnaList = blog.content.questions.map((qna, i) => {
-      const answers = blog.content.answers.map((answer, j) => {
-        return i === j
+    const qna = this.props.blogs.map((blog, i) => {
+      const qnaList = blog.content.questions.map((question, j) => {
+        const answer = blog.content.answers.filter((answer, k) => {
+          return <p key={k}>{j === k}</p>
+        })
+
+        return (
+          <div className="qna-pair">
+            <h5 key={j}>{question}</h5>
+            {answer}
+          </div>
+        )
       })
-      return (
-        <div key={i} className="qna-list">
-          <h5>{blog.content.questions[i]}</h5><br/>
-          <p>{answers}</p>
-        </div>
-      )
+      return <div className="qna-list">{qnaList}</div>
     })
+    return <div className="blog-qna">{qna}</div>
   }
 })
