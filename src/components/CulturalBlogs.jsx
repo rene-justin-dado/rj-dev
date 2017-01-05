@@ -7,9 +7,6 @@ const proxy = 'https://crossorigin.me/',
       url = `${proxy}http://rj-dev-backend.herokuapp.com` || 'http://localhost:3000'
 
 export default React.createClass({
-  propTypes: {
-    blogs: React.PropTypes.array
-  },
   getInitialState () {
     return {
       blogs: []
@@ -34,7 +31,7 @@ export default React.createClass({
           <h5>{blog.category}</h5>
           <h4>{blog.title}</h4><br/>
           <h4>{blog.content.title}</h4><br/>
-          {QnAList}
+          <QnAList key={i} blogs={this.state.blogs}/>
         </div>
       )
     })
