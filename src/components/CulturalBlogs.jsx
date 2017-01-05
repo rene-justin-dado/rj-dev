@@ -27,7 +27,7 @@ export default React.createClass({
   render () {
     const blogs = this.state.blogs.map((blog, i) => {
       return (
-        <div key={i} className="blog-info">
+        <div key={blog.id} className="blog-info">
           <h5>{blog.category}</h5>
           <h4>{blog.title}</h4><br/>
           <h4>{blog.content.title}</h4><br/>
