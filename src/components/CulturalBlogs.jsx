@@ -28,7 +28,7 @@ export default React.createClass({
     const blogs = this.state.blogs.map((blog, i) => {
       return (
         <div key={blog.id} className="blog-info">
-          <h4>{blog.title}</h4><br/>
+          <h4><em>{blog.title}</em></h4><br/>
           <QnAList
             blogs={this.state.blogs}
             proxy={proxy}

@@ -30,7 +30,7 @@ export default React.createClass({
       if (this.props.blogId === qnaPair.blog_id) {
         return (
           <div key={this.props.blogId - i} className="qna-list">
-            <h5>{qnaPair.question}</h5>
+            <h5><b>{qnaPair.question}</b></h5>
             <p>{qnaPair.answer}</p>
           </div>
         )
