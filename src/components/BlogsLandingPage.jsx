@@ -9,7 +9,6 @@ export default React.createClass({
           <Link to="/"><h5>Home</h5></Link>
           <h1>Blogs</h1>
         </header>
-        <input type="text" placeholder="Name your new blog post" />
         <Link className="cultural-blogs-link" to="/blogs/cultural">
           <h1>Cultural Blogs</h1>
         </Link>
