@@ -4,7 +4,7 @@ import {Link} from 'react-router'
 import QnAList from './QnAList'
 
 const proxy = 'https://crossorigin.me/',
-      url = `${proxy}http://rj-dev-backend.herokuapp.com` || 'http://localhost:3000'
+      url = 'http://rj-dev-backend.herokuapp.com' || 'http://localhost:3000'
 
 export default React.createClass({
   getInitialState () {
@@ -14,7 +14,7 @@ export default React.createClass({
   },
   componentWillMount () {
     request
-      .get(`${url}/v1/blogs`)
+      .get(`${proxy}${url}/v1/blogs`)
       .end((err, res) => {
         if (err) {
           return
