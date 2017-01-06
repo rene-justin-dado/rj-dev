@@ -116,6 +116,13 @@ hr {
   margin-left: 1rem;
 }
 
+.blog-info {
+  padding: 2rem;
+}
+.qna-list {
+  margin-bottom: 2rem;
+}
+
 @media (min-width: 321px) {
 
   #site-search {
