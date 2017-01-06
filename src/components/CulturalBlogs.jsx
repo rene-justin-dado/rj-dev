@@ -4,7 +4,7 @@ import {Link} from 'react-router'
 import QnAList from './QnAList'
 
 const proxy = 'https://crossorigin.me/',
-      url = `${proxy}http://rj-dev-backend.herokuapp.com` || 'http://localhost:3000'
+      url = `http://rj-dev-backend.herokuapp.com` || 'http://localhost:3000'
 
 export default React.createClass({
   getInitialState () {
@@ -28,10 +28,12 @@ export default React.createClass({
     const blogs = this.state.blogs.map((blog, i) => {
       return (
         <div key={blog.id} className="blog-info">
-          <h5>{blog.category}</h5>
           <h4>{blog.title}</h4><br/>
-          <h4>{blog.content.title}</h4><br/>
-          <QnAList key={i} blogs={this.state.blogs}/>
+          <QnAList
+            blogs={this.state.blogs}
+            proxy={proxy}
+            url={url}
+            blogId={blog.id}/>
         </div>
       )
     })

@@ -1,29 +1,41 @@
 import React from 'react'
+import request from 'superagent'
 
 export default React.createClass({
-  propTypes: {
-    blogs: React.PropTypes.array.isRequired
+  props: {
+    blogs: React.PropTypes.array.isRequired,
+    proxy: React.PropTypes.string.isRequired,
+    blogId: React.PropTypes.number.isRequired,
+    url: React.PropTypes.string.isRequired
+  },
+  getInitialState () {
+    return {
+      qna: []
+    }
+  },
+  componentWillMount () {
+    request
+      .get(`${this.props.proxy}${this.props.url}/v1/blogs/qna`)
+      .end((err, res) => {
+        if (err) {
+          return
+        }
+        this.setState({
+          qna: res.body.data
+        })
+      })
   },
   render () {
-    const qna = this.props.blogs.map((blog, i) => {
-      const qnaList = blog.content.questions.map((question, j, qArr) => {
-        const answer = blog.content.answers.filter((answer, k, aArr) => {
-          return <p key={answer.substring(0, 9) || answer.substring(3, 10)}>{j === k}</p>
-        })
-
+    const qnaList = this.state.qna.map((qnaPair, i) => {
+      if (this.props.blogId === qnaPair.blog_id) {
         return (
-          <div
-            key={question.substring(0, 9) || question.substring(3, 10)}
-            className="qna-pair">
-            <h5><em>{question}</em></h5>
-            {answer}
+          <div key={this.props.blogId - i} className="qna-list">
+            <h5>{qnaPair.question}</h5>
+            <p>{qnaPair.answer}</p>
           </div>
         )
-      })
-      return <div
-        key={i}
-        className="qna-list">{qnaList}</div>
+      }
     })
-    return <div className="blog-qna">{qna}</div>
+    return <div className="qna-list-container">{qnaList}</div>
   }
 })
