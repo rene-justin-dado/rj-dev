@@ -1,5 +1,5 @@
 # RJDev
-This is a personal blog regarding my reflections on my experience of phase-0 with EDA, Nikau-2016.
+This is a personal blog regarding my reflections on my experience of phase-0 with EDA, Nikau-2016. And in the future, maybe some things I think to talk about.
 
 It is a WIP (pre-pre-alpha) and will change, **A LOT**.
 Please bear with me as I hone my skills through this, and other projects. :)
@@ -9,19 +9,19 @@ I also need to do a lot of styling work!
 
 
 #Back-End
-I've just got a free heroku account at the moment, so until I have a place to deploy my back end, it only runs locally. :/
-You can set it up for yourself, though! :D
+Back-end for the rj-dev blog repo at:
+# http://rj-dev-backend.herokuapp.com/
 
-Just do this:
-```
-git clone https://github.com/rene-justin-dado/rj-dev-back-end.git
-npm i
-npm start
-```
+Routes:
+/v1/projects
+/v1/blogs/
+/v1/blogs/questions
+/v1/blogs/answers
+/v1/blogs/qna
 
 # For the Future
 The projects definitely need a 'credits' section. It's very important to give credit where credit's due!
 
-I need to set up my API for my blogs as well. I've hard-coded one entry to a route. Not ideal. >.<
+The back-end is handling my current blogs how I need for now, but there's always more I could do.
 
 It is not yet optimised for mobile, so that's something to think about. XD
