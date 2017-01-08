@@ -1,0 +1,113 @@
+@import "home";
+
+body {
+  margin: 0px;
+  font-size: 1.3rem;
+}
+
+hr {
+  margin-bottom: 1.5rem;
+}
+
+.welcome-header, .projects-landing-page header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  top: 0;
+}
+#site-search {
+  display: none;
+}
+
+.excerpts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+  padding-right: 8rem;
+  margin-top: 3rem;
+  }
+.excerpts-container img {
+  width: 18rem;
+  height: 14rem;
+}
+.excerpt-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: grey;
+}
+.excerpt-section h2 {
+  margin: 0;
+}
+.nav-link {
+  color: #4c959a;
+}
+
+
+.about-page {
+  margin: 2rem;
+}
+
+.personal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal-lists {
+  width: 48%;
+}
+
+.skills-icons {
+  width: 10rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.technical-skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#full-stack-javascript-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.projects-landing-page {
+  display: flex;
+  flex-direction: column;
+}
+.projects-landing-page h1 {
+  align-self: center;
+}
+.project-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid teal;
+  margin-top: 3rem;
+}
+.project-info * {
+  margin: 0;
+}
+
+.emphasize {
+  display: flex;
+  justify-content: center;
+  background-color: #d2c7c7;
+}
+.emphasize a {
+  margin-left: 1rem;
+}
+
+.blog-info {
+  padding: 2rem;
+}
+.qna-list {
+  margin-bottom: 2rem;
+}
