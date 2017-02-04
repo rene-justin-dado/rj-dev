@@ -19,11 +19,11 @@
 
 #site-search {
   position: absolute;
-  display: none; }
+  visibility: hidden; }
 
-@media (min-width: 321px) {
+@media only screen and (min-device-width: 321px) {
   #site-search {
-    display: block; }
+    visibility: visible; }
   .welcome-message {
     display: flex;
     justify-content: center;

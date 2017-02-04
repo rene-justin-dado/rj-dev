@@ -1,6 +1,5 @@
 .welcome-message {
   display: flex;
-
   flex-direction: column;
   align-items: center;
   padding: 1rem;
@@ -20,14 +19,14 @@
   top: 0;
 }
 #site-search {
-  display: none;
   position: absolute;
+  visibility: hidden;
 }
 
-@media (min-width: 321px) {
+@media only screen and (min-device-width: 321px) {
 
   #site-search {
-    display: block;
+    visibility: visible;
   }
   .welcome-message {
     display: flex;
