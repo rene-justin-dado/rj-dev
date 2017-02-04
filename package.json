@@ -7,7 +7,8 @@
     "nodemon": "nodemon ./src/server/server.js",
     "build": "webpack --watch",
     "devserver": "webpack-dev-server --hot --inline",
-    "postinstall": "webpack"
+    "postinstall": "webpack",
+    "sass": "node_modules/.bin/node-sass src/public/styles/main.scss -o src/public/styles/"
   },
   "keywords": [
     "react",
@@ -25,6 +26,7 @@
     "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-react": "^6.1.2",
     "eslint-plugin-standard": "^2.0.0",
+    "node-sass": "^4.5.0",
     "nodemon": "^1.11.0",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
