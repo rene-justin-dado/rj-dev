@@ -1,3 +1,5 @@
+$linkColor: green;
+
 @import "home";
 
 body {
@@ -7,17 +9,6 @@ body {
 
 hr {
   margin-bottom: 1.5rem;
-}
-
-.welcome-header, .projects-landing-page header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 1rem;
-  top: 0;
-}
-#site-search {
-  display: none;
 }
 
 .excerpts-container {

@@ -1,5 +1,6 @@
 .welcome-message {
   display: flex;
+
   flex-direction: column;
   align-items: center;
   padding: 1rem;
@@ -9,6 +10,18 @@
   background: url(../images/bionic-hand.jpg) left no-repeat;
   background-size: 34rem;
   border-bottom: solid 2px grey;
+}
+
+.welcome-header, .projects-landing-page header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  top: 0;
+}
+#site-search {
+  display: none;
+  position: absolute;
 }
 
 @media (min-width: 321px) {
