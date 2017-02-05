@@ -1,3 +1,10 @@
+body {
+  margin: 0px;
+  font-size: 1.3rem; }
+
+hr {
+  margin-bottom: 1.5rem; }
+
 .welcome-message {
   display: flex;
   flex-direction: column;
@@ -6,11 +13,17 @@
   padding-bottom: 2rem;
   margin-top: 5rem;
   color: #122486;
-  background: url(../images/bionic-hand.jpg) left no-repeat;
   background-size: 34rem;
   border-bottom: solid 2px grey; }
 
-.welcome-header, .projects-landing-page header {
+.emphasize {
+  display: flex;
+  justify-content: center;
+  background-color: #d2c7c7; }
+  .emphasize a {
+    margin-left: 1rem; }
+
+.welcome-header, .projects-landing-page {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -35,13 +48,6 @@
     background-size: 40rem 30rem;
     border: 2px solid teal; } }
 
-body {
-  margin: 0px;
-  font-size: 1.3rem; }
-
-hr {
-  margin-bottom: 1.5rem; }
-
 .excerpts-container {
   display: flex;
   flex-wrap: wrap;
@@ -49,22 +55,24 @@ hr {
   padding: 1rem;
   padding-right: 8rem;
   margin-top: 3rem; }
-
-.excerpts-container img {
-  width: 18rem;
-  height: 14rem; }
+  .excerpts-container img {
+    width: 18rem;
+    height: 14rem; }
 
 .excerpt-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: grey; }
-
-.excerpt-section h2 {
-  margin: 0; }
+  .excerpt-section h2 {
+    margin: 0; }
 
 .nav-link {
   color: #4c959a; }
+  .nav-link:hover {
+    color: #7da5c8; }
+  .nav-link:active {
+    color: teal; }
 
 .about-page {
   margin: 2rem; }
@@ -95,9 +103,8 @@ hr {
 .projects-landing-page {
   display: flex;
   flex-direction: column; }
-
-.projects-landing-page h1 {
-  align-self: center; }
+  .projects-landing-page h1 {
+    align-self: center; }
 
 .project-info {
   display: flex;
@@ -106,17 +113,6 @@ hr {
   padding-bottom: 1rem;
   border-bottom: 2px solid teal;
   margin-top: 3rem; }
-
-.project-info * {
-  margin: 0; }
-
-.emphasize {
-  display: flex;
-  justify-content: center;
-  background-color: #d2c7c7; }
-
-.emphasize a {
-  margin-left: 1rem; }
 
 .blog-info {
   padding: 2rem; }
