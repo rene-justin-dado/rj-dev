@@ -7,7 +7,7 @@ export default React.createClass({
       <nav className="navbar">
         <div className="container-fluid">
           <div className="dropdown">
-            <a className="dropdown-toggle" data-toggle="dropdown"><h3>The Bifrost</h3></a>
+            <a className="dropdown-toggle nav-link" data-toggle="dropdown"><h3>The Bifrost</h3></a>
             <ul className="dropdown-menu">
               <li><Link to="/projects">Projects</Link></li>
               <li><Link to="blogs">Blogs</Link></li>

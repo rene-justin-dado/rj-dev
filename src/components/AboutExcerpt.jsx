@@ -8,7 +8,9 @@ export default React.createClass({
         <Link to="/about">
           <img src="/images/about-image.jpeg" alt="about-image" />
         </Link>
-        <Link className="nav-link" to={'/about'}><h2>About</h2></Link>
+        <Link className="nav-link" to={'/about'}>
+          <h2>About</h2>
+        </Link>
         <p>This is some info about me!</p>
       </section>
     )
