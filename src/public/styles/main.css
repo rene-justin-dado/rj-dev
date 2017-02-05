@@ -16,14 +16,7 @@ hr {
   background-size: 34rem;
   border-bottom: solid 2px grey; }
 
-.emphasize {
-  display: flex;
-  justify-content: center;
-  background-color: #d2c7c7; }
-  .emphasize a {
-    margin-left: 1rem; }
-
-.welcome-header, .projects-landing-page {
+.welcome-header, .projects-landing-page header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -33,6 +26,13 @@ hr {
 #site-search {
   position: absolute;
   visibility: hidden; }
+
+.emphasize {
+  display: flex;
+  justify-content: center;
+  background-color: #d2c7c7; }
+  .emphasize a {
+    margin-left: 1rem; }
 
 @media only screen and (min-device-width: 321px) {
   #site-search {
@@ -113,6 +113,8 @@ hr {
   padding-bottom: 1rem;
   border-bottom: 2px solid teal;
   margin-top: 3rem; }
+  .project-info * {
+    margin: 0; }
 
 .blog-info {
   padding: 2rem; }
