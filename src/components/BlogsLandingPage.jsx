@@ -9,7 +9,7 @@ export default React.createClass({
           <Link to="/"><h5>Home</h5></Link>
           <h1>Blogs</h1>
         </header>
-        <Link className="cultural-blogs-link" to="/blogs/cultural">
+        <Link className="cultural-blogs-link" to="/blogs/by/EDA culture">
           <h1>Cultural Blogs</h1>
         </Link>
       </div>

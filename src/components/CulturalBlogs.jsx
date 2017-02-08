@@ -14,7 +14,7 @@ export default React.createClass({
   },
   componentWillMount () {
     request
-      .get(`${proxy}${url}/v1/blogs`)
+      .get(`${url}/v1/blogs/by/${this.props.params.category}`)
       .end((err, res) => {
         if (err) {
           return
