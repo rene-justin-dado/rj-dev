@@ -4,7 +4,7 @@ const path = require('path')
 const PORT = cfg.port
 const app = express()
 
-app.use(express.static(path.resolve(__dirname, 'src', 'public')))
+app.use(express.static(path.resolve(__dirname, '../', 'public')))
 
 app.listen(PORT, function () {
   console.log('Listening on port ' + PORT)
