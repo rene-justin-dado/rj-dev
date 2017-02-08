@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <Route path="/" component={App} />
         <Route path="/projects" component={ProjectsLandingPage} />
         <Route path="/blogs" component={BlogsLandingPage} />
-        <Route path="/blogs/cultural" component={CulturalBlogs} />
+        <Route path="/blogs/by/:category" component={CulturalBlogs} />
         <Route path="/about" component={AboutPage} />
       </Router>
     </Provider>,
