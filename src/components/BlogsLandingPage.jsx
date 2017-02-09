@@ -12,6 +12,9 @@ export default React.createClass({
         <Link className="cultural-blogs-link" to="/blogs/by/EDA culture">
           <h1>Cultural Blogs</h1>
         </Link>
+        <Link className="technical-blogs-link" to="/blogs/by/Technical Skills">
+          <h1>Technical Blogs</h1>
+        </Link>
       </div>
     )
   }
