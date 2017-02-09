@@ -2,8 +2,9 @@ import React from 'react'
 import request from 'superagent'
 import {Link} from 'react-router'
 import QnAList from './QnAList'
+import config from '../config'
 
-const url = 'http://rj-dev-backend.herokuapp.com' || 'http://localhost:3000'
+const url = config.url
 
 export default React.createClass({
   props: {

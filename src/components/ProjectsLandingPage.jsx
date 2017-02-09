@@ -1,9 +1,7 @@
 import React from 'react'
 import request from 'superagent'
 import {Link} from 'react-router'
-
-const proxy = 'https://crossorigin.me/',
-      url = `${proxy}http://rj-dev-backend.herokuapp.com` || 'http://localhost:3000'
+import config from '../config'
 
 export default React.createClass({
   getInitialState () {
@@ -13,7 +11,7 @@ export default React.createClass({
   },
   componentWillMount () {
     request
-      .get(`${url}/v1/projects`)
+      .get(`${config.url}/v1/projects`)
       .end((err, res) => {
         if (err) {
           return

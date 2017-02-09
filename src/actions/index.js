@@ -1,11 +1,10 @@
 import request from 'superagent'
-
-const url = 'http://localhost:3000'
+import config from '../config'
 
 export const getBlogsByCategory = (category) => {
   return (dispatch) => {
     request
-      .get(`${url}/v1/blogs/by/${category}`)
+      .get(`${config.url}/v1/blogs/by/${category}`)
       .end((err, res) => {
         if (err) {
           res.send('Whoops! There was a problem!')
@@ -32,7 +31,7 @@ export const receiveProjects = (projects) => {
 export const getAllProjects = (projects) => {
   return (dispatch) => {
     request
-      .get(`${url}/v1/projects`)
+      .get(`${config.url}/v1/projects`)
       .end((err, res) => {
         if (err) {
           res.send('Whoops! There was a problem!')

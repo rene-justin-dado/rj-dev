@@ -1,10 +1,7 @@
 const development = {
   port: 5000,
-  env: global.process.env.NODE_ENV || 'development'
+  url: 'http://localhost:3000'
 }
-const production = {
-  port: process.env.PORT,
-  env: global.process.env.NODE_ENV || 'production'
-}
+const production = { url: process.env.PORT }
 
-module.exports = global.process.env.NODE_ENV === 'production' ? production : development
+module.exports = process.env.NODE_ENV === 'production' ? production : development
