@@ -6,7 +6,7 @@
     "start": "node ./src/server/server.js",
     "nodemon": "nodemon ./src/server/server.js",
     "build": "webpack --watch",
-    "devserver": "webpack-dev-server --hot --inline",
+    "devserver": "webpack-dev-server --hot --inline --open --content-base src/public",
     "postinstall": "webpack",
     "sass": "node_modules/.bin/node-sass src/public/styles/main.scss -o src/public/styles/"
   },
