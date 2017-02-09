@@ -8,7 +8,7 @@ import thunk from 'redux-thunk'
 import rootReducer from './reducers'
 import App from './components/App'
 import ProjectsLandingPage from './components/ProjectsLandingPage'
-import BlogsLandingPage from './components/BlogsLandingPage'
+import BlogsContainer from './containers/BlogsContainer'
 import CulturalBlogs from './components/CulturalBlogs'
 import AboutPage from './components/AboutPage'
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <Router history={hashHistory}>
         <Route path="/" component={App} />
         <Route path="/projects" component={ProjectsLandingPage} />
-        <Route path="/blogs" component={BlogsLandingPage} />
+        <Route path="/blogs" component={BlogsContainer} />
         <Route path="/blogs/by/:category" component={CulturalBlogs} />
         <Route path="/about" component={AboutPage} />
       </Router>
