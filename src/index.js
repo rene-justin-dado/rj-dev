@@ -9,8 +9,9 @@ import rootReducer from './reducers'
 import App from './components/App'
 import ProjectsLandingPage from './components/ProjectsLandingPage'
 import BlogsContainer from './containers/BlogsContainer'
-import CategoryBlog from './components/CategoryBlog'
+import BlogEntryForm from './components/BlogEntryForm'
 import AboutPage from './components/AboutPage'
+import CategoryBlog from './components/CategoryBlog'
 
 const store = createStore(
   rootReducer,
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <Route path="/projects" component={ProjectsLandingPage} />
         <Route path="/blogs" component={BlogsContainer} />
         <Route path="/blogs/by/:category" component={CategoryBlog} />
+        <Route path="/blogs/add/by/:category" component={BlogEntryForm} />
         <Route path="/about" component={AboutPage} />
       </Router>
     </Provider>,

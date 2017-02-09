@@ -6,25 +6,21 @@ export default React.createClass({
     return (
       <div className="blogs-landing-page">
         <header>
-          <Link to="/"><h5>Home</h5></Link>
+          <Link to="/"><h3>Home</h3></Link>
           <h1>Blogs</h1>
-          <form action="/add/post/route">
-            <label>Category
-              <input type="text"/>
-            </label>
-            <label>Title
-              <input type="text"/>
-            </label>
-            <label>Sub-Title
-              <input type="text"/>
-            </label>
-            <button name="add_blog_entry"
-                    formMethod="post"
-                    value="add_blog_entry">
-              Add Entry
-            </button>
-          </form>
+
+            <nav className="navbar">
+              <div className="container-fluid">
+                <div className="dropdown">
+                  <a className="dropdown-toggle nav-link" data-toggle="dropdown"><h3>Add a blog</h3></a>
+                  <ul className="dropdown-menu">
+                    <li><Link to="/blogs/add/by/:category">Generic Blog Entry</Link></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
         </header>
+
         <Link className="cultural-blogs-link" to="/blogs/by/EDA culture">
           <h1>Cultural Blogs</h1>
         </Link>
