@@ -9,7 +9,7 @@ import rootReducer from './reducers'
 import App from './components/App'
 import ProjectsLandingPage from './components/ProjectsLandingPage'
 import BlogsContainer from './containers/BlogsContainer'
-import CulturalBlogs from './components/CulturalBlogs'
+import CategoryBlog from './components/CategoryBlog'
 import AboutPage from './components/AboutPage'
 
 const store = createStore(
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <Route path="/" component={App} />
         <Route path="/projects" component={ProjectsLandingPage} />
         <Route path="/blogs" component={BlogsContainer} />
-        <Route path="/blogs/by/:category" component={CulturalBlogs} />
+        <Route path="/blogs/by/:category" component={CategoryBlog} />
         <Route path="/about" component={AboutPage} />
       </Router>
     </Provider>,
