@@ -74,6 +74,18 @@ hr {
   .nav-link:active {
     color: teal; }
 
+.blogs-landing-page header {
+  display: flex;
+  justify-content: space-around; }
+
+#blog_entry_form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.blog_entry {
+  width: 100%; }
+
 .about-page {
   margin: 2rem; }
 
