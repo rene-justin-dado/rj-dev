@@ -6,7 +6,7 @@ export default React.createClass({
     return (
       <div className="about-page">
         <header>
-          <Link to="/"><h5>Home</h5></Link>
+          <Link to="/"><h3>Home</h3></Link>
           <h1>Here's some technologies I have experience with.</h1>
         </header>
         <div className="technical-skills">
