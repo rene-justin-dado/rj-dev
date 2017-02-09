@@ -2,10 +2,10 @@ import request from 'superagent'
 
 const url = 'http://localhost:3000'
 
-export const getAllBlogs = () => {
+export const getBlogsByCategory = (category) => {
   return (dispatch) => {
     request
-      .get(`${url}/v1/blogs`)
+      .get(`${url}/v1/blogs/by/${category}`)
       .end((err, res) => {
         if (err) {
           res.send('Whoops! There was a problem!')
