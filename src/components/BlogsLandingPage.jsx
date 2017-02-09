@@ -8,6 +8,22 @@ export default React.createClass({
         <header>
           <Link to="/"><h5>Home</h5></Link>
           <h1>Blogs</h1>
+          <form action="/add/post/route">
+            <label>Category
+              <input type="text"/>
+            </label>
+            <label>Title
+              <input type="text"/>
+            </label>
+            <label>Sub-Title
+              <input type="text"/>
+            </label>
+            <button name="add_blog_entry"
+                    formMethod="post"
+                    value="add_blog_entry">
+              Add Entry
+            </button>
+          </form>
         </header>
         <Link className="cultural-blogs-link" to="/blogs/by/EDA culture">
           <h1>Cultural Blogs</h1>
