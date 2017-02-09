@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "Justin's Personal Blog",
   "scripts": {
-    "start": "node ./src/server/server.js",
-    "nodemon": "nodemon ./src/server/server.js",
+    "start": "NODE_ENV=production node ./src/server/server.js",
+    "nodemon": "NODE_ENV=development nodemon ./src/server/server.js",
     "build": "webpack --watch",
-    "devserver": "webpack-dev-server --hot --inline --open --content-base src/public",
+    "devserver": "NODE_ENV=development webpack-dev-server --hot --inline --open --content-base src/public",
     "postinstall": "webpack",
     "sass": "node_modules/.bin/node-sass src/public/styles/main.scss -o src/public/styles/"
   },
