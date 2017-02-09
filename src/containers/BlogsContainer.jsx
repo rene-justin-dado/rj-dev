@@ -1,8 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import CulturalBlogs from '../components/CulturalBlogs'
-import {getAllBlogs} from '../actions'
+import BlogsLandingPage from '../components/BlogsLandingPage'
+import {getBlogsByCategory} from '../actions'
 
 const mapStateToProps = (state) => {
   return {
@@ -12,10 +12,10 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getBlogs: () => {
-      dispatch(getAllBlogs())
+    blogs: (category) => {
+      dispatch(getBlogsByCategory(category))
     }
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(CulturalBlogs)
+export default connect(mapStateToProps, mapDispatchToProps)(BlogsLandingPage)
