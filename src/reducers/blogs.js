@@ -1,9 +1,15 @@
 const initState = [
   {
     id: 0,
-    category: "",
-    title: "",
-    content: {}
+    category: '',
+    title: '',
+    sub_title: ''
+  },
+  {
+    id: 1,
+    category: '',
+    title: '',
+    sub_title: ''
   }
 ]
 
