@@ -3,10 +3,12 @@ import request from 'superagent'
 import {Link} from 'react-router'
 import QnAList from './QnAList'
 
-const proxy = 'https://crossorigin.me/',
-      url = 'http://rj-dev-backend.herokuapp.com' || 'http://localhost:3000'
+const url = 'http://rj-dev-backend.herokuapp.com' || 'http://localhost:3000'
 
 export default React.createClass({
+  props: {
+    blogs: React.PropTypes.object.isRequired
+  },
   getInitialState () {
     return {
       blogs: []
@@ -31,7 +33,6 @@ export default React.createClass({
           <h4><em>{blog.title}</em></h4><br/>
           <QnAList
             blogs={this.state.blogs}
-            proxy={proxy}
             url={url}
             blogId={blog.id}/>
         </div>

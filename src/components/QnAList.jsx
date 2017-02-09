@@ -4,7 +4,6 @@ import request from 'superagent'
 export default React.createClass({
   props: {
     blogs: React.PropTypes.array.isRequired,
-    proxy: React.PropTypes.string.isRequired,
     blogId: React.PropTypes.number.isRequired,
     url: React.PropTypes.string.isRequired
   },
@@ -15,7 +14,7 @@ export default React.createClass({
   },
   componentWillMount () {
     request
-      .get(`${this.props.proxy}${this.props.url}/v1/blogs/qna`)
+      .get(`${this.props.url}/v1/blogs/qna`)
       .end((err, res) => {
         if (err) {
           return
