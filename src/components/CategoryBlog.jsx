@@ -32,6 +32,7 @@ export default React.createClass({
       return (
         <div key={blog.id} className="blog-info">
           <h4><em>{blog.title}</em></h4><br/>
+          <h5><em>{blog.sub_title}</em></h5><br/>
           <QnAList
             blogs={this.state.blogs}
             url={url}
@@ -41,7 +42,9 @@ export default React.createClass({
     })
     return (
       <div className="cultural-blogs">
-        <h5><Link to="/blogs">Blog Landing</Link></h5>
+        <header>
+          <h5><Link to="/blogs">Blog Landing</Link></h5>
+        </header>
         {blogs}
       </div>
     )
