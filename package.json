@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Justin's Personal Blog",
   "scripts": {
-    "postinstall": "webpack",
+    "postinstall": "webpack -p",
     "start": "node ./src/server/server.js",
     "nodemon": "NODE_ENV=development nodemon ./src/server/server.js",
     "build": "webpack --watch",
