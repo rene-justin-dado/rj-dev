@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Justin's Personal Blog",
   "scripts": {
-    "postinstall": "rm src/public/bundle* webpack -p",
+    "postinstall": "rm src/public/bundle* webpack --optimize-minimize --define process.env.NODE_ENV="production"",
     "start": "node ./src/server/server.js",
     "nodemon": "nodemon ./src/server/server.js",
     "build": "webpack --watch",
