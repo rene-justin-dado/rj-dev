@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Justin's Personal Blog",
   "scripts": {
-    "postinstall": "webpack --optimize-minimize --define",
+    "postinstall": "webpack --optimize-minimize",
     "start": "node ./src/server/server.js",
     "nodemon": "nodemon --inspect=9228 ./src/server/server.js",
     "build": "webpack --watch",
