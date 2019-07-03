@@ -1,6 +1,9 @@
 {
   "name": "personal-blog",
   "version": "0.1.0",
+  "engines": {
+    "node": "6.9.2"
+  },
   "description": "Justin's Personal Blog",
   "scripts": {
     "postinstall": "webpack --optimize-minimize",
