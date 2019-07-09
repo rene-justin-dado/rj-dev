@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default React.createClass({
+export default class SiteSearch extends React.Component {
   props: {
     onClick: React.PropTypes.func.isRequired
   },
@@ -17,4 +17,4 @@ export default React.createClass({
         />
     )
   }
-})
+}

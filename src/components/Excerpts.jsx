@@ -4,7 +4,7 @@ import AboutExcerpt from '../components/AboutExcerpt'
 import BlogsExcerpt from '../components/BlogsExcerpt'
 import ProjectsExcerpt from '../components/ProjectsExcerpt'
 
-export default React.createClass({
+export default class Excerpts extends React.Component {
   render () {
     return (
       <section className="excerpts-container">
@@ -14,4 +14,4 @@ export default React.createClass({
       </section>
     )
   }
-})
+}

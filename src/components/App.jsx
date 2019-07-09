@@ -3,14 +3,12 @@ import WelcomeHeader from './WelcomeHeader'
 import Excerpts from './Excerpts'
 import WelcomeMessage from './WelcomeMessage'
 
-export default React.createClass({
-  render () {
-    return (
-      <div className='app-container'>
-        <WelcomeHeader />
-        <WelcomeMessage />
-        <Excerpts />
-      </div>
-    )
-  }
-})
+export default function App () {
+  return (
+    <div className='app-container'>
+      <WelcomeHeader />
+      <WelcomeMessage />
+      <Excerpts />
+    </div>
+  )
+}

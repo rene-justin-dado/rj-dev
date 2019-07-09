@@ -3,7 +3,7 @@ import config from '../config'
 
 const url = config.url
 
-export default React.createClass({
+export default class BlogEntryForm extends React.Component {
   render () {
     return (
       <div className="blog-entry-form">
@@ -39,4 +39,4 @@ export default React.createClass({
       </div>
     )
   }
-})
+}

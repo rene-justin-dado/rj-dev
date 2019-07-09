@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router'
 
-export default React.createClass({
+export default class BlogsLandingPage extends React.Component {
   render () {
     return (
       <div className="blogs-landing-page">
@@ -30,4 +30,4 @@ export default React.createClass({
       </div>
     )
   }
-})
+}

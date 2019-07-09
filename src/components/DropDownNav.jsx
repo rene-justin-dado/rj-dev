@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router'
 
-export default React.createClass({
+export default class DropDownNav extends React.Component {
   render () {
     return (
       <nav className="navbar">
@@ -18,4 +18,4 @@ export default React.createClass({
       </nav>
     )
   }
-})
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import request from 'superagent'
 
-export default React.createClass({
+export default class QnAList extends React.Component {
   props: {
     blogs: React.PropTypes.array.isRequired,
     blogId: React.PropTypes.number.isRequired,
@@ -37,4 +37,4 @@ export default React.createClass({
     })
     return <div className="qna-list-container">{qnaList}</div>
   }
-})
+}

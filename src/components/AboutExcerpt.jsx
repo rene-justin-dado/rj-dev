@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router'
 
-export default React.createClass({
+export default class AboutExcerpt extends React.Component {
   render () {
     return (
       <section className="excerpt-section">
@@ -15,4 +15,4 @@ export default React.createClass({
       </section>
     )
   }
-})
+}

@@ -6,7 +6,7 @@ import config from '../config'
 
 const url = config.url
 
-export default React.createClass({
+export default class CategoryBlog extends React.Component {
   props: {
     blogs: React.PropTypes.object.isRequired
   },
@@ -49,4 +49,4 @@ export default React.createClass({
       </div>
     )
   }
-})
+}

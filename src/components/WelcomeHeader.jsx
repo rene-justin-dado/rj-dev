@@ -3,7 +3,7 @@ import React from 'react'
 import SiteSearch from '../components/SiteSearch'
 import DropDownNav from '../components/DropDownNav'
 
-export default React.createClass({
+export default class WelcomeHeader extends React.Component {
   render () {
     return (
       <header className="welcome-header">
@@ -13,4 +13,4 @@ export default React.createClass({
       </header>
     )
   }
-})
+}

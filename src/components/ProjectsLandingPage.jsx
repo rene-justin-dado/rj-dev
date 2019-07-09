@@ -3,7 +3,7 @@ import request from 'superagent'
 import {Link} from 'react-router'
 import config from '../config'
 
-export default React.createClass({
+export default class ProjectsLandingPage extends React.Component {
   getInitialState () {
     return {
       projects: []
@@ -52,4 +52,4 @@ export default React.createClass({
       </div>
     )
   }
-})
+}

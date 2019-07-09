@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default React.createClass({
+export default class WelcomeMessage extends React.Component {
   render () {
     return (
       <div className="welcome-message">
@@ -19,4 +19,4 @@ export default React.createClass({
       </div>
     )
   }
-})
+}
