@@ -1,5 +1,4 @@
 const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.js'),
@@ -14,11 +13,6 @@ module.exports = {
         loader: 'babel-loader?cacheDirectory',
         test: /\.jsx?$/,
         exclude: 'node_modules'
-      },
-      // Sass Loader
-      {
-        loader: ExtractTextPlugin.extract('css-loader?sourceMap', 'sass-loader?sourceMap'),
-        test: /\.scss$/
       }
     ]
   },
@@ -28,12 +22,6 @@ module.exports = {
     outFile: path.resolve(__dirname, 'src', 'public', 'styles', 'main.css'),
     outputStyle: 'compressed'
   },
-  // For outputting css file during bundling
-  plugins: [
-    new ExtractTextPlugin('public/styles/main.css', {
-      allChunks: true
-    })
-  ],
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
