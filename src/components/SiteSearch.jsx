@@ -1,10 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default class SiteSearch extends React.Component {
-  props: {
-    onClick: React.PropTypes.func.isRequired
-  },
-
   render () {
     return (
       <input

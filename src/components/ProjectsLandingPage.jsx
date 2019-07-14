@@ -4,11 +4,14 @@ import {Link} from 'react-router'
 import config from '../config'
 
 export default class ProjectsLandingPage extends React.Component {
-  getInitialState () {
-    return {
+
+  constructor (props) {
+    super(props)
+    this.state = {
       projects: []
     }
-  },
+  }
+
   componentWillMount () {
     request
       .get(`${config.url}/v1/projects`)
@@ -20,7 +23,8 @@ export default class ProjectsLandingPage extends React.Component {
           projects: res.body.data
         })
       })
-  },
+  }
+
   render () {
     const projects = this.state.projects.map((elem, i) => {
       return (

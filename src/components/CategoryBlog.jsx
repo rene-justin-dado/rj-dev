@@ -4,29 +4,28 @@ import {Link} from 'react-router'
 import QnAList from './QnAList'
 import config from '../config'
 
-const url = config.url
-
 export default class CategoryBlog extends React.Component {
-  props: {
-    blogs: React.PropTypes.object.isRequired
-  },
-  getInitialState () {
-    return {
+
+  constructor(props) {
+    super(props)
+    this.state = {
       blogs: []
     }
-  },
-  componentWillMount () {
+  }
+
+  UNSAFE_componentWillMount () {
     request
-      .get(`${url}/v1/blogs/by/${this.props.params.category}`)
-      .end((err, res) => {
-        if (err) {
-          return
-        }
-        this.setState({
-          blogs: res.body.data
-        })
+    .get(`${config.url}/v1/blogs/by/${this.props.params.category}`)
+    .end((err, res) => {
+      if (err) {
+        return
+      }
+      this.state({
+        blogs: res.body.data
       })
-  },
+    })
+  }
+
   render () {
     const blogs = this.state.blogs.map((blog, i) => {
       return (
@@ -49,4 +48,8 @@ export default class CategoryBlog extends React.Component {
       </div>
     )
   }
+}
+
+CategoryBlog.PropTypes = {
+  blogs: React.PropTypes.object.isRequired
 }
