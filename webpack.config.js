@@ -14,12 +14,6 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: 'node_modules'
       }
-      // ,
-      // // Sass Loader
-      // {
-      //   loader: ExtractTextPlugin.extract('css-loader?sourceMap', 'sass-loader?sourceMap'),
-      //   test: /\.scss$/
-      // }
     ]
   },
   sassLoader: {
