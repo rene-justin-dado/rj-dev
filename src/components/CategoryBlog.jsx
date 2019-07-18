@@ -1,8 +1,9 @@
 import React from 'react'
 import request from 'superagent'
-import {Link} from 'react-router'
+import {Link} from 'react-router-dom'
 import QnAList from './QnAList'
 import config from '../config'
+import PropTypes from 'prop-types'
 
 export default class CategoryBlog extends React.Component {
 
@@ -51,5 +52,5 @@ export default class CategoryBlog extends React.Component {
 }
 
 CategoryBlog.PropTypes = {
-  blogs: React.PropTypes.object.isRequired
+  blogs: PropTypes.object.isRequired
 }

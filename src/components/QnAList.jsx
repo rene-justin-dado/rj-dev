@@ -1,8 +1,9 @@
 import React from 'react'
 import request from 'superagent'
+import PropTypes from 'prop-types'
 
 export default class QnAList extends React.Component {
-  
+
   constructor(props) {
     super(props)
     this.state = {
@@ -39,7 +40,7 @@ export default class QnAList extends React.Component {
 }
 
 QnAList.propTypes = {
-  blogs: React.PropTypes.array.isRequired,
-  blogId: React.PropTypes.number.isRequired,
-  url: React.PropTypes.string.isRequired
+  blogs: PropTypes.array.isRequired,
+  blogId: PropTypes.number.isRequired,
+  url: PropTypes.string.isRequired
 }

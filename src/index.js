@@ -1,6 +1,6 @@
 import React from 'react'
 import {render} from 'react-dom'
-import {Router, Route, hashHistory} from 'react-router'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 import App from './components/App'
 import ProjectsLandingPage from './components/ProjectsLandingPage'
@@ -11,8 +11,8 @@ import CategoryBlog from './components/CategoryBlog'
 
 document.addEventListener('DOMContentLoaded', () => {
   render(
-    <Router history={hashHistory}>
-      <Route path="/" component={App} />
+    <Router basename="/">
+      <Route exact path="/" component={App} />
       <Route path="/projects" component={ProjectsLandingPage} />
       <Route path="/blogs" component={BlogsContainer} />
       <Route path="/blogs/by/:category" component={CategoryBlog} />

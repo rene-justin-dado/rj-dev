@@ -1,6 +1,6 @@
 import React from 'react'
 import request from 'superagent'
-import {Link} from 'react-router'
+import {Link} from 'react-router-dom'
 import config from '../config'
 
 export default class ProjectsLandingPage extends React.Component {
