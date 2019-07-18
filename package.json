@@ -10,6 +10,7 @@
     "start": "node ./src/server/server.js",
     "nodemon": "nodemon --inspect=9228 ./src/server/server.js",
     "build": "webpack",
+    "dev-build": "webpack --watch",
     "devserver": "webpack-dev-server --hot --inline --open --content-base src/public",
     "sass": "node_modules/.bin/node-sass src/public/styles/main.scss -o src/public/styles/"
   },
@@ -59,7 +60,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
-    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
     "react-router-redux": "^4.0.8",
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
