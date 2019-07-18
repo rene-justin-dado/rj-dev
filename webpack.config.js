@@ -1,29 +1,24 @@
 const path = require('path')
 
 module.exports = {
+  mode: process.env.NODE_ENV,
   entry: path.resolve(__dirname, 'src', 'index.js'),
   output: {
     path: path.resolve(__dirname, 'src', 'public'),
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       // Babel Loader
       {
-        loader: 'babel-loader?cacheDirectory',
+        loader: 'babel-loader',
         test: /\.jsx?$/,
-        exclude: 'node_modules'
+        exclude: /node_modules/
       }
     ]
   },
-  sassLoader: {
-    file: path.resolve(__dirname, 'src', 'public', 'styles', 'main.scss'),
-    includePaths: [path.resolve(__dirname, 'src', 'public', 'styles')],
-    outFile: path.resolve(__dirname, 'src', 'public', 'styles', 'main.css'),
-    outputStyle: 'compressed'
-  },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   devtool: 'source-map'
 }
