@@ -1,5 +1,5 @@
 const development = {
-  port: process.env.FRONT_PORT,
+  port: 3000,
   url: 'http://localhost:3000'
 }
 const production = {
@@ -7,4 +7,4 @@ const production = {
   url: 'http://rj-dev-backend.herokuapp.com'
 }
 
-module.exports = process.env.NODE_ENV == 'production' ? production : development
+module.exports = process.env.NODE_ENV === 'production' ? production : development
